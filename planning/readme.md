@@ -26,3 +26,38 @@ News/video collection for fans of Liverpool Football Club to read and share new 
 2.  List View: Basic list view for all posts.
 
 3.  New Post: Create a new item. Provide content or links to external content with description.
+
+4.  Edit/Delete Post: Edit an existing post. Also includes button to delete a post.
+
+5.  Standings: I will pull the live league standings from an API and display a box with all 20 teams + wins/losses etc.
+
+## Model
+
+1.  Post: this model will contain information pertaining to:
+    * author: required
+    * content: required
+    * link to external content: optional
+    * date created: default value
+    * embed video: optional
+    * comments: (new sub-model with author/content?)
+
+## MVP
+
+* Users can read all posts
+* Users can add a new post
+* Users can edit an existing post
+
+## Bronze
+
+* Users can embed videos on a video page similars to news page
+* API fetch for information (league standings + upcoming matches)
+
+## Silver
+
+* Users can create an account and sign in. all edits/deletes to that users content will be authenticated for only that user.
+* Users can comment on other posts
+
+## Gold
+
+* keyword searching of all posts
+* display further information (player profiles, etc.)
