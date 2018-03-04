@@ -4,8 +4,11 @@
     <li>
         <p>{{this.title}}</p>
         <p>{{this.user}} posted at: {{this.createdAt}}</p>
-        <p>View:
+        <p>View Article:
             <a href="{{this.link}}">{{this.link}}</a>
+        </p>
+        <p>
+            <a href="/posts/{{this.id}}">Discussion</a>
         </p>
     </li>
     {{/each}}
