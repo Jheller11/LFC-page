@@ -3,8 +3,10 @@
     {{#each posts}}
     <li>
         <p>{{this.title}}</p>
-        <p>{{this.author}} posted at: {{this.createdAt}}</p>
-        <a href="{{this.url}}">Full Article (external)</a>
+        <p>{{this.user}} posted at: {{this.createdAt}}</p>
+        <p>View:
+            <a href="{{this.link}}">{{this.link}}</a>
+        </p>
     </li>
     {{/each}}
 </ol>

@@ -2,11 +2,11 @@
   {
     "title": "Test",
     "user": "Test User 1",
-    "link": "www.google.com"
+    "link": "http://www.google.com"
   },
   {
     "title": "Test 2",
     "user": "Test User 2",
-    "link": "www.yahoo.com"
+    "link": "http://www.yahoo.com"
   }
 ]
