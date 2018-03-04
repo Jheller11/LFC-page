@@ -1,0 +1,10 @@
+<h2>All posts:</h2>
+<ol>
+    {{#each posts}}
+    <li>
+        <p>{{this.title}}</p>
+        <p>{{this.author}} posted at: {{this.createdAt}}</p>
+        <a href="{{this.url}}">Full Article (external)</a>
+    </li>
+    {{/each}}
+</ol>
