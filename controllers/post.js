@@ -9,6 +9,11 @@ router.get('/', (req, res) => {
   })
 })
 
+// new view for posting new content
+router.get('/new', (req, res) => {
+  res.render('post/new')
+})
+
 // show view (commenting feature to be added here)
 router.get('/:id', (req, res) => {
   Post.findOne({ _id: req.params.id }).then(post => {
