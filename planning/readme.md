@@ -27,7 +27,6 @@ News/video collection for fans of Liverpool Football Club to read and share new 
     * content: required
     * link to external content: optional
     * date created: default value
-    * embed video: optional
     * comments: (new sub-model with author/content?)
 
 ## MVP
