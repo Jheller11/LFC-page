@@ -22,4 +22,6 @@ app.get('/', (req, res) => res.redirect('/posts'))
 app.get('/table', (req, res) => res.render('table'))
 app.get('/schedule', (req, res) => res.render('schedule'))
 
-app.listen(4000, () => console.log('server running'))
+app.set('port', process.env.PORT || 4000)
+
+app.listen(app.get('port'), () => console.log('server running'))
