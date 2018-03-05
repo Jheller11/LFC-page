@@ -5,9 +5,13 @@ const parser = require('body-parser')
 const postController = require('./controllers/post')
 const videoController = require('./controllers/video')
 const override = require('method-override')
+const path = require('path')
+const cors = require('cors')
 
 app.use(parser.urlencoded({ extended: true }))
 app.use(override('_method'))
+app.use(express.static(path.join(__dirname, 'public')))
+app.use(cors())
 
 app.set('view engine', 'hbs')
 
