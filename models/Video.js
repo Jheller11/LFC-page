@@ -1,7 +1,7 @@
-const mongoose = require('./db/connection')
+const mongoose = require('../db/connection')
 
 const video = new mongoose.Schema({
-  user: {
+  description: {
     type: String,
     required: true
   },

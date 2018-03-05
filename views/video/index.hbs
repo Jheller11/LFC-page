@@ -2,12 +2,10 @@
 <p>
     <a href="/videos/new">Create New</a>
 </p>
-<ol>
-    {{#each videos}}
-    <li>
-        <p>{{this.embed_link}}</p>
-        <p>{{this.user}} posted at: {{this.createdAt}}</p>
 
-    </li>
-    {{/each}}
-</ol>
+{{#each videos}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/{{embed_link}}" frameborder="0" allow="autoplay; encrypted-media"
+    allowfullscreen></iframe>
+<p>{{description}}</p>
+
+{{/each}}
