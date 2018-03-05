@@ -9,3 +9,26 @@
 <button>
     <a href="/posts/edit/{{this.id}}">Edit</a>
 </button>
+
+<h2>Comments:</h2>
+
+<ul>
+    {{#each comments}}
+    <li>
+        <p>{{this.comment}}</p>
+        <p>{{this.commenter}}</p>
+    </li>
+    {{/each}}
+</ul>
+
+<form action="/posts/{{id}}?_method=put" method="POST">
+    <p>
+        <label for="comment">New Comment: </label>
+        <input type="text" name="comment" placeholder="Add comment">
+    </p>
+    <p>
+        <label for="commenter">Name: </label>
+        <input type="text" name="commenter" placeholder="Enter your name">
+    </p>
+    <input type="submit">
+</form>

@@ -13,7 +13,13 @@ const post = new mongoose.Schema({
     type: Date,
     default: Date.now()
   },
-  link: String
+  link: String,
+  comments: [
+    {
+      comment: String,
+      commenter: String
+    }
+  ]
 })
 
 const Post = mongoose.model('Post', post)

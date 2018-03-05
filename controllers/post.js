@@ -44,7 +44,7 @@ router.delete('/:id', (req, res) => {
   })
 })
 
-// show view (commenting feature to be added here)
+// show view
 router.get('/:id', (req, res) => {
   Post.findOne({ _id: req.params.id }).then(post => {
     res.render('post/show', post)

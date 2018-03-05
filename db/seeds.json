@@ -2,7 +2,17 @@
   {
     "title": "Test",
     "user": "Test User 1",
-    "link": "http://www.google.com"
+    "link": "http://www.google.com",
+    "comments": [
+      {
+        "comment": "Working",
+        "commenter": "test"
+      },
+      {
+        "comment": "working x2",
+        "commenter": "test x2"
+      }
+    ]
   },
   {
     "title": "Test 2",
