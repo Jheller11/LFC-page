@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
   Video.create({
     embed_link: req.body.embed_link,
-    user: req.body.user
+    description: req.body.description
   }).then(() => {
     res.redirect('/videos')
   })

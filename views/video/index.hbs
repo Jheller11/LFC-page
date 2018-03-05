@@ -1,11 +1,11 @@
-<h1>Videos and Highlights</h1>
+<h1>Highlights</h1>
 <p>
     <a href="/videos/new">Create New</a>
 </p>
 
 {{#each videos}}
+<p>{{description}}</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/{{embed_link}}" frameborder="0" allow="autoplay; encrypted-media"
     allowfullscreen></iframe>
-<p>{{description}}</p>
 
 {{/each}}
