@@ -1,7 +1,7 @@
 const table = document.querySelector('table')
 
 const tableFetch = function() {
-  var urlTable = 'http://api.football-data.org/v1/competitions/445/leagueTable'
+  var urlTable = 'https://api.football-data.org/v1/competitions/445/leagueTable'
   fetch(urlTable)
     .then(res => res.json())
     .then(res => {

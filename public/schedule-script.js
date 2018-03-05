@@ -1,7 +1,7 @@
 const schedule = document.querySelector('.schedule')
 
 const scheduleFetch = function() {
-  var urlSchedule = 'http://api.football-data.org/v1/teams/64/fixtures'
+  var urlSchedule = 'https://api.football-data.org/v1/teams/64/fixtures'
   console.log('working')
   fetch(urlSchedule)
     .then(res => res.json())
