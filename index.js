@@ -20,5 +20,6 @@ app.use('/videos', videoController)
 app.get('/', (req, res) => res.redirect('/posts'))
 
 app.get('/table', (req, res) => res.render('table'))
+app.get('/schedule', (req, res) => res.render('schedule'))
 
 app.listen(4000, () => console.log('server running'))
