@@ -27,18 +27,18 @@ News/video collection for fans of Liverpool Football Club to read and share new 
     * content: required
     * link to external content: optional
     * date created: default value
-    * comments: (new sub-model with author/content?)
+    * comments: (new schema with author/content?)
 
 ## MVP
 
-* Users can read all posts
-* Users can add a new post
-* Users can edit an existing post
+* Users can read all posts - completed 3/5
+* Users can add a new post - completed 3/5
+* Users can edit an existing post - completed 3/5
 
 ## Bronze
 
-* Users can embed videos on a video page similars to news page
-* API fetch for information (league standings + upcoming matches)
+* Users can embed videos on a video page similars to news page completed 3/5
+* API fetch for information (league standings + upcoming matches) -completed 3/5
 
 ## Silver
 
