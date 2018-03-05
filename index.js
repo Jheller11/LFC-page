@@ -3,8 +3,10 @@ const app = express()
 const hbs = require('hbs')
 const parser = require('body-parser')
 const postController = require('./controllers/post')
+const override = require('method-override')
 
 app.use(parser.urlencoded({ extended: true }))
+app.use(override('_method'))
 
 app.set('view engine', 'hbs')
 

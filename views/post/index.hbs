@@ -1,4 +1,7 @@
 <h2>All posts:</h2>
+<p>
+    <a href="/posts/new">Create New</a>
+</p>
 <ol>
     {{#each posts}}
     <li>
@@ -8,7 +11,7 @@
             <a href="{{this.link}}">{{this.link}}</a>
         </p>
         <p>
-            <a href="/posts/{{this.id}}">Discussion</a>
+            <a href="/posts/{{this.id}}">Comments</a>
         </p>
     </li>
     {{/each}}

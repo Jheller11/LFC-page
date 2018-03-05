@@ -9,9 +9,39 @@ router.get('/', (req, res) => {
   })
 })
 
+// post request for adding new post
+router.post('/', (req, res) => {
+  Post.create({
+    title: req.body.title,
+    user: req.body.user,
+    link: req.body.link
+  }).then(() => {
+    res.redirect('/posts')
+  })
+})
+
 // new view for posting new content
 router.get('/new', (req, res) => {
   res.render('post/new')
+})
+// edit view for existing posts
+router.get('/edit/:id', (req, res) => {
+  Post.findOne({ _id: req.params.id }).then(post => {
+    res.render('post/edit', post)
+  })
+})
+
+// edit item in db
+router.put('/:id', (req, res) => {
+  Post.findOneAndUpdate({ _id: req.params.id }, req.body).then(() => {
+    res.redirect('/posts')
+  })
+})
+// delete post from db
+router.delete('/:id', (req, res) => {
+  Post.findOneAndRemove({ _id: req.params.id }).then(() => {
+    res.redirect('/posts')
+  })
 })
 
 // show view (commenting feature to be added here)
