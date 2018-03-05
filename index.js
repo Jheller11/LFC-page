@@ -11,13 +11,14 @@ const cors = require('cors')
 app.use(parser.urlencoded({ extended: true }))
 app.use(override('_method'))
 app.use(express.static(path.join(__dirname, 'public')))
-app.use(cors())
-
 app.set('view engine', 'hbs')
+app.use(cors())
 
 app.use('/posts', postController)
 app.use('/videos', videoController)
 
-app.get('/', (req, res) => res.render('index.hbs'))
+app.get('/', (req, res) => res.redirect('/posts'))
+
+app.get('/table', (req, res) => res.render('table'))
 
 app.listen(4000, () => console.log('server running'))

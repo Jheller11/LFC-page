@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liverpool Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
 </head>
 
 <body>
     <header>
-        <h1>Liverpool Links</h1>
-        <nav>
-            <a class="nav" href="/">Home</a>
-            <a class="nav" href="/posts">News</a>
-            <a class="nav" href="/videos">Match Highlights</a>
+        <nav class="nav-wrapper red">
+            <a href="#" class="brand-logo left">Liverpool Links</a>
+            <ul id="nav" class="right">
+                <li>
+                    <a href="/posts">News</a>
+                </li>
+                <li>
+                    <a href="/videos">Match Highlights</a>
+                </li>
+                <li>
+                    <a href="/table">League Table</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
     {{{body}}}
 
+    <footer class="page-footer red white-text">Created by Jeff </footer>
 </body>
 
 </html>

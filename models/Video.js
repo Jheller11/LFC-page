@@ -9,7 +9,7 @@ const video = new mongoose.Schema({
     type: Date,
     default: Date.now()
   },
-  embed_link: {
+  link: {
     type: String,
     required: true
   }

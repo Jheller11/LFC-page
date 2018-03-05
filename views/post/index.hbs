@@ -1,18 +1,16 @@
-<h2>All posts:</h2>
+<h2>News:</h2>
 <p>
     <a href="/posts/new">Create New</a>
 </p>
-<ol>
-    {{#each posts}}
-    <li>
-        <p>{{this.title}}</p>
-        <p>{{this.user}} posted at: {{this.createdAt}}</p>
-        <p>View Article:
-            <a href="{{this.link}}">{{this.link}}</a>
-        </p>
-        <p>
-            <a href="/posts/{{this.id}}">Comments</a>
-        </p>
-    </li>
-    {{/each}}
-</ol>
+{{#each posts}}
+<div class="hoverable card-panel">
+    <p>{{this.title}}</p>
+    <p>{{this.user}} posted at: {{this.createdAt}}</p>
+    <p>View Article:
+        <a target="_blank" href="{{this.link}}">{{this.link}}</a>
+    </p>
+    <p>
+        <a href="/posts/{{this.id}}">Comments</a>
+    </p>
+</div>
+{{/each}}

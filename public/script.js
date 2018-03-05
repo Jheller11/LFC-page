@@ -19,4 +19,4 @@ const tableFetch = function() {
 }
 
 console.log('js working')
-// tableFetch()
+tableFetch()
