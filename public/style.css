@@ -1,0 +1,30 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+
+h3 {
+  padding-left: 20px;
+}
+
+a {
+  padding: 20px;
+}
+
+.item {
+  width: 90%;
+}
+
+.title {
+  color: red;
+  text-decoration: ;
+  font-weight: bold;
+}
+p {
+  margin: 5px 0;
+}
+.flex {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}

@@ -1,22 +1,25 @@
-<h2>Edit this item:</h2>
+<h3>Edit this item:</h3>
+<div class="flex">
+    <div class="card-panel item">
+        <form action="/posts/{{this.id}}?_method=put" method="POST">
+            <p>
+                <label for="title">Title/Description</label>
+                <input type="text" name="title" value="{{this.title}}">
+            </p>
+            <p>
+                <label for="user">User</label>
+                <input type="text" name="user" value="{{this.user}}">
+            </p>
+            <p>
+                <label for="link">Link</label>
+                <input type="text" name="link" value="{{this.link}}">
+            </p>
+            <p>Created: {{this.createdAt}}</p>
+            <input type="submit" value="Update">
+        </form>
 
-<form action="/posts/{{this.id}}?_method=put" method="POST">
-    <p>
-        <label for="title">Title/Description</label>
-        <input type="text" name="title" value="{{this.title}}">
-    </p>
-    <p>
-        <label for="user">User</label>
-        <input type="text" name="user" value="{{this.user}}">
-    </p>
-    <p>
-        <label for="link">Link</label>
-        <input type="text" name="link" value="{{this.link}}">
-    </p>
-    <p>Created: {{this.createdAt}}</p>
-    <input type="submit" value="Update">
-</form>
-
-<form action="/posts/{{this.id}}?_method=delete" method="POST">
-    <input type="submit" value="Delete">
-</form>
+        <form action="/posts/{{this.id}}?_method=delete" method="POST">
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+</div>

@@ -1,16 +1,17 @@
-<h2>Videos</h2>
+<h3>Videos</h3>
 <p>
     <a href="/videos/new">Create New</a>
 </p>
+<div class="flex">
+    {{#each videos}}
+    <div class="hoverable card-panel">
+        <p class="title">{{description}}</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{embed_link}}" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
 
-{{#each videos}}
-<div class="hoverable card-panel">
-    <p>{{description}}</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{embed_link}}" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
-
-    <form action="/videos/{{this.id}}?_method=delete" method="POST">
-        <input type="submit" value="Delete Video">
-    </form>
+        <form action="/videos/{{this.id}}?_method=delete" method="POST">
+            <input type="submit" value="Delete Video">
+        </form>
+    </div>
+    {{/each}}
 </div>
-{{/each}}

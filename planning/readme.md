@@ -54,10 +54,10 @@ News/video collection for fans of Liverpool Football Club to read and share new 
 
 1.  Add comments - complete
 2.  Delete Videos in MLAB DB - complete
-3.  Ability to Delete Videos
+3.  Ability to Delete Videos - complete
 4.  More info (external links/Api fetch)
 5.  Styles
-6.  re-deploy on heroku
+6.  re-deploy on heroku - complete
 
 ## Wednesday - 3/7
 

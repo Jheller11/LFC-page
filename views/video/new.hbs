@@ -1,14 +1,17 @@
-<p>Fill out this page to post new content.</p>
+<p>Fill out this page to post a new video.</p>
+<div class="flex">
+    <div class="card-panel item">
+        <form <form action="/videos" method="POST">
+            <p>
+                <label for="embed_link">Youtube ID:</label>
+                <input type="text" name="embed_link" placeholder="Paste ID Here">
+            </p>
+            <p>
+                <label for="description">Description:</label>
+                <input type="text" name="description" placeholder="Description">
+            </p>
+            <input type="submit">
 
-<form <form action="/videos" method="POST">
-    <p>
-        <label for="embed_link">Youtube ID:</label>
-        <input type="text" name="embed_link" placeholder="Paste ID Here">
-    </p>
-    <p>
-        <label for="description">Description:</label>
-        <input type="text" name="description" placeholder="Description">
-    </p>
-    <input type="submit">
-
-</form>
+        </form>
+    </div>
+</div>
