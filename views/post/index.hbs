@@ -6,11 +6,11 @@
 <div class="hoverable card-panel">
     <p>{{this.title}}</p>
     <p>{{this.user}} posted at: {{this.createdAt}}</p>
-    <p>View Article:
-        <a target="_blank" href="{{this.link}}">{{this.link}}</a>
+    <p>
+        <a target="_blank" href="{{this.link}}">Article</a>
     </p>
     <p>
-        <a href="/posts/{{this.id}}">Comments</a>
+        <a href="/posts/{{this.id}}">Comments ({{this.comments.length}})</a>
     </p>
 </div>
 {{/each}}

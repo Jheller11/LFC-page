@@ -17,6 +17,13 @@ router.post('/', (req, res) => {
   })
 })
 
+// delete video from db
+router.delete('/:id', (req, res) => {
+  Video.findOneAndRemove({ _id: req.params.id }).then(() => {
+    res.redirect('/videos')
+  })
+})
+
 router.get('/new', (req, res) => {
   res.render('video/new')
 })

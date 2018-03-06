@@ -49,3 +49,24 @@ News/video collection for fans of Liverpool Football Club to read and share new 
 
 * keyword searching of all posts
 * display further information (player profiles, etc.)
+
+## Tuesday - 3/6
+
+1.  Add comments - complete
+2.  Delete Videos in MLAB DB - complete
+3.  Ability to Delete Videos
+4.  More info (external links/Api fetch)
+5.  Styles
+6.  re-deploy on heroku
+
+## Wednesday - 3/7
+
+1.  User sign in and authentication...
+2.  Work on screencast
+3.  Deploy final version.
+
+## Thursday - 3/8
+
+1.  fix any bugs
+2.  small improvements
+3.  submission (repo)

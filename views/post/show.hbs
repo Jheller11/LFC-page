@@ -12,23 +12,23 @@
 
 <h2>Comments:</h2>
 
-<ul>
+<ol>
     {{#each comments}}
     <li>
-        <p>{{this.comment}}</p>
-        <p>{{this.commenter}}</p>
+        <p>"{{this.comment}}"</p>
+        <p>{{this.name}} | {{this.createdAt}}</p>
     </li>
     {{/each}}
-</ul>
+</ol>
 
-<form action="/posts/{{id}}?_method=put" method="POST">
+<form action="/posts/{{id}}" method="POST">
     <p>
         <label for="comment">New Comment: </label>
         <input type="text" name="comment" placeholder="Add comment">
     </p>
     <p>
-        <label for="commenter">Name: </label>
-        <input type="text" name="commenter" placeholder="Enter your name">
+        <label for="name">Name: </label>
+        <input type="text" name="name" placeholder="Enter your name">
     </p>
     <input type="submit">
 </form>

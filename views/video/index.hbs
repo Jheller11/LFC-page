@@ -8,5 +8,9 @@
     <p>{{description}}</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/{{embed_link}}" frameborder="0" allow="autoplay; encrypted-media"
         allowfullscreen></iframe>
+
+    <form action="/videos/{{this.id}}?_method=delete" method="POST">
+        <input type="submit" value="Delete Video">
+    </form>
 </div>
 {{/each}}

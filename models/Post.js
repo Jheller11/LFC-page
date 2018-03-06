@@ -1,5 +1,14 @@
 const mongoose = require('../db/connection')
 
+const commentSchema = new mongoose.Schema({
+  comment: String,
+  name: String,
+  createdAt: {
+    type: Date,
+    default: Date.now()
+  }
+})
+
 const post = new mongoose.Schema({
   title: {
     type: String,
@@ -14,12 +23,7 @@ const post = new mongoose.Schema({
     default: Date.now()
   },
   link: String,
-  comments: [
-    {
-      comment: String,
-      commenter: String
-    }
-  ]
+  comments: [commentSchema]
 })
 
 const Post = mongoose.model('Post', post)

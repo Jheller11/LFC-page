@@ -20,6 +20,18 @@ router.post('/', (req, res) => {
   })
 })
 
+// add a comment
+router.post('/:id', (req, res) => {
+  Post.findOne({ _id: req.params.id }).then(post => {
+    post.comments.push({
+      comment: req.body.comment,
+      name: req.body.name
+    })
+    post.save()
+    res.redirect('/posts/' + req.params.id)
+  })
+})
+
 // new view for posting new content
 router.get('/new', (req, res) => {
   res.render('post/new')
@@ -37,6 +49,7 @@ router.put('/:id', (req, res) => {
     res.redirect('/posts')
   })
 })
+
 // delete post from db
 router.delete('/:id', (req, res) => {
   Post.findOneAndRemove({ _id: req.params.id }).then(() => {
