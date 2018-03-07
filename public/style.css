@@ -14,10 +14,12 @@ body {
 h1 {
   color: red;
   text-align: center;
+  font-family: 'Quantico', sans-serif;
 }
 
 h3 {
   padding-left: 20px;
+  font-family: 'Quantico', sans-serif;
 }
 
 a {
