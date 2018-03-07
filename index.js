@@ -22,6 +22,9 @@ app.get('/table', (req, res) => {
     res.render('table', { teams })
   })
 })
+app.get('/info', (req, res) => {
+  res.render('info')
+})
 
 app.set('port', process.env.PORT || 4000)
 
