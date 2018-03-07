@@ -1,0 +1,22 @@
+<table class="bordered">
+    <tr>
+        <th>Position</th>
+        <th>Team</th>
+        <th>Games Played</th>
+        <th>Points</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+    </tr>
+    {{#each teams}}
+    <tr>
+        <th>{{this.position}}</th>
+        <th>{{this.teamName}}</th>
+        <th>{{this.played}}</th>
+        <th>{{this.points}}</th>
+        <th>{{this.wins}}</th>
+        <th>{{this.draws}}</th>
+        <th>{{this.losses}}</th>
+    </tr>
+    {{/each}}
+</table>
