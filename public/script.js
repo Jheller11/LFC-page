@@ -6,6 +6,7 @@ L.tileLayer(
     attribution:
       'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
+    minZoom: 6,
     id: 'mapbox.dark',
     accessToken:
       'pk.eyJ1IjoiamhlbGxlcjExNDEiLCJhIjoiY2plYTB0anJwMHRtMTJ3bGU4a3N1MmFraSJ9.5w6UzEtXD8IM9Z8_afks-Q'
