@@ -1,15 +1,17 @@
-<h3 class="title">{{this.title}}</h3>
+<div class="card-panel item">
 
-<p>{{this.user}} posted on {{this.createdAt}}</p>
+    <h3 class="title">{{this.title}}</h3>
 
-<p>View:
-    <a href="{{this.link}}">{{this.link}}</a>
-</p>
+    <p>{{this.user}} posted on {{this.createdAt}}</p>
 
-<button>
-    <a href="/posts/edit/{{this.id}}">Edit</a>
-</button>
+    <p>View:
+        <a href="{{this.link}}">{{this.link}}</a>
+    </p>
 
+    <button>
+        <a href="/posts/edit/{{this.id}}">Edit</a>
+    </button>
+</div>
 <h2>Comments:</h2>
 
 <ol>
@@ -20,7 +22,7 @@
     </li>
     {{/each}}
 </ol>
-<div class="item">
+<div class="card-panel item">
     <form action="/posts/{{id}}" method="POST">
         <p>
             <label for="comment">New Comment: </label>
