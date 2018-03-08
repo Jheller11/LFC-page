@@ -21,7 +21,17 @@ var blueCircles = [
   ['Etihad Stadium: Manchester City', 53.483, -2.2004],
   ['King Power Stadium: Leicester City', 52.6204, -1.142],
   ['Goodison Park: Everton FC', 53.439, -2.966],
-  ["St. Mary's Stadium: Southampton FC", 50.542, -1.233]
+  ["St. Mary's Stadium: Southampton FC", 50.904, -1.404],
+  ['Wembley Statium: Tottenham Hotspur FC', 51.551, -0.305],
+  ['St. James Park: Newcastle United', 54.978, -1.618],
+  ['bet365 Stadium: Stoke City FC', 52.988, -2.1764],
+  ['Vicarage Road: Watford FC', 51.65, -0.402],
+  ['Dean Court: AFC Bournemouth', 50.735, -1.838],
+  ['The Hawthorns: West Bromwich Albion', 52.509, -1.964],
+  ['Amex Stadium: Brighton & Hove Albion FC', 50.862, -0.084],
+  ['Turf Moor: Burnely FC', 53.789, -2.23],
+  ['Kirkless Stadium, Huddersfield Town', 53.654, -1.768],
+  ['London Stadium: West Ham United', 51.539, -0.017]
 ]
 
 for (var i = 0; i < blueCircles.length; i++) {
