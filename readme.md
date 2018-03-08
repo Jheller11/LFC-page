@@ -6,19 +6,19 @@ This page was designed to allow Liverpool FC supporters to share news and videos
 
 ## Technologies Used
 
-Node
-Expess
-MongoDB
-Handlebars
+* Node
+* Expess
+* MongoDB
+* Handlebars
 
 For dependencies, please view package.json.
 
 ## External Resources
 
-Leage Table: https://www.football-data.org/ - API for football data
-Map (Javascript and CSS): Leaflet + Mapbox
-CSS: Materialize
-node-fetch: https://github.com/bitinn/node-fetch
+* Leage Table: https://www.football-data.org/ - API for football data
+* Map (Javascript and CSS): Leaflet + Mapbox
+* CSS: Materialize
+* node-fetch: https://github.com/bitinn/node-fetch
 
 ## Deployed Application
 
